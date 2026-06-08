@@ -55,8 +55,7 @@ int desempilhar(EstruturaPilha* p) {
 }
 
 int espiarTopo(EstruturaPilha* p) {
-    if (pilhaVazia(p)) return INT_MIN; // Evita crash se a pilha estiver vazia
-    return p->topo->valor;
+    if (pilhaVazia(p)) return INT_MIN;
 }
 
 int main() {
@@ -130,7 +129,6 @@ int main() {
 
     cout << "\n\nPrograma finalizado.\n";
 
-    // Liberando a memória dos ponteiros das pilhas
     delete pares;
     delete impares;
 
